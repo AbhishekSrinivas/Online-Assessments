@@ -2,7 +2,10 @@
 
 ## What I Built
 
-I created a Python web API that checks the health of system components organized in a Directed Acyclic Graph (DAG). The API takes a JSON input with component relationships, runs health checks asynchronously on all components, and returns an interactive HTML report with a visual graph showing which components are healthy or failed.
+I created a Python web API that checks the health of system components organised in a Directed Acyclic Graph (DAG). The API takes a JSON input with component relationships, runs health checks asynchronously on all components, and returns an interactive HTML report with a visual graph showing which components are healthy or failed.
+
+## Note
+I designed the code to be highly readable. The comments serve not just to explain what the code does, but to document the technical approach, making the entire process transparent.
 
 ## How to Run It
 
@@ -47,12 +50,12 @@ The API returns an HTML report showing:
 ✅ **Used BFS Traversal** - Traverses the graph in breadth-first search order  
 ✅ **Async Health Checks** - All components are checked concurrently using Python's asyncio  
 ✅ **Displayed Results in a Table** - Shows component name, status, and duration  
-✅ **Added Graph Visualization** - Visual DAG with color-coded nodes showing health status  
+✅ **Added Graph Visualisation** - Visual DAG with colour-coded nodes showing health status  
 
 ## Technologies Used
 
 - **Flask** - For the web API
 - **NetworkX** - For graph operations and DAG validation
-- **Matplotlib** - For visualizing the system graph
+- **Matplotlib** - For visualising the system graph
 - **Python asyncio** - For running health checks concurrently
 - **HTML/CSS** - For the report styling
